@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Nikos Dimitrakopoulos"]
   s.email       = ["n.dimitrakopoulos@fraudpointer.com"]
   s.homepage    = "http://www.fraudpointer.com"
-  s.summary     = %q{TODO: Client library for accessing Fraudpointer REST API}
-  s.description = %q{TODO: Client library for accessing Fraudpointer REST API}
+  s.summary     = %q{Client library for accessing Fraudpointer REST API}
+  s.description = %q{Client library for accessing Fraudpointer REST API}
 
   s.rubyforge_project = "fraudpointer-client"
 
