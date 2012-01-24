@@ -1,0 +1,8 @@
+*.gem
+.bundle
+.rvmrc
+.idea
+*.iml
+Gemfile.lock
+pkg/*
+coverage
