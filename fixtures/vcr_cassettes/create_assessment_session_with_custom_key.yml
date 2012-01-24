@@ -1,0 +1,36 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://production.fraudpointer.com:443/api/assessment_sessions.json?key=CUSTOM_KEY
+    body: ! '{"assessment_session":{}}'
+    headers:
+      content-type:
+      - application/json
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 201
+      message: Created
+    headers:
+      date:
+      - Tue, 24 Jan 2012 14:22:50 GMT
+      server:
+      - Apache/2.2.19 (Debian)
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      cache-control:
+      - no-cache
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      x-runtime:
+      - '0.131951'
+      location:
+      - https://production.fraudpointer.com/api/assessment_sessions/1555625
+      status:
+      - '201'
+      content-length:
+      - '37'
+      content-type:
+      - application/json; charset=utf-8
+    body: ! '{"assessment_session":{"id":1555077}}'
+    http_version: '1.1'
