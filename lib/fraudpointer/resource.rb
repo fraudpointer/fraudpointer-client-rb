@@ -18,8 +18,10 @@ module Fraudpointer
         @key
       end
 
+      @@klasses = {}
+
       def with_key(key)
-        Class.new(self).tap do |klass|
+        @@klasses[key] ||= Class.new(self).tap do |klass|
           klass.instance_variable_set(:@key, key)
           klass.element_name = self.element_name
         end
